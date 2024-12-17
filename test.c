@@ -7,6 +7,7 @@ typedef struct Book {
     char title[100];
     char author[100];
     int book_id;
+    char quantity;	//book quantity
     struct Book *next;
 } Book;
 
