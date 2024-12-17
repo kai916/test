@@ -119,13 +119,14 @@ void deleteBookById() {
 }
 
 // 显示所有图书信息函数
-void displayAllBooks() {
+void displayAllBooks()
+{
     Book *current = head;
     if (current == NULL) {
         printf("当前没有图书记录！\n");
         return;
     }
-
+    printf("hello\r\n");
     printf("所有图书信息如下:\n");
     while (current!= NULL) {
         printf("标题: %s\n", current->title);
@@ -136,7 +137,8 @@ void displayAllBooks() {
     }
 }
 
-int main() {
+int main() 
+{
     int choice;
     while (1) {
         printf("图书管理系统\n");
